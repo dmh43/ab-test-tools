@@ -24,8 +24,8 @@ def mde_auc(n, frac):
   n2 = n*(1-frac)
   return mde(n, frac) / n1 / n2
 
-n, frac = 0.1 * 10.8e6, 0.5
-print(mean(n, frac))    # 145800000000.0
-print(std(n, frac))     # 162000074.99998263
-print(mde(n, frac))     # 402809113.8905219
-print(mde_auc(n, frac)) # 0.0013813755620388267
+n, frac = 4*400e3, 0.5
+print(mean(n, frac))    # 320000000000.0
+print(std(n, frac))     # 292118788.6231673
+print(mde(n, frac))     # 726346024.1983426
+print(mde_auc(n, frac)) # 0.0011349156628099103
